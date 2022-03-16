@@ -1,0 +1,18 @@
+{{ define "main" }}
+     {{ partial "navbar" . }}
+     {{ partial "hero" . }}
+     <div class="general-list">
+          <div class="gereral-list__container">
+               <div class="row">
+                    {{ range .Pages }}
+
+                    <div class="sub-block">
+                         <a href="{{.URL}}">{{.Title}}</a>
+                    </div>     
+     
+                    {{ end }}
+               </div>
+          </div>
+     </div>
+     {{ partial "footer" . }}
+{{ end }}

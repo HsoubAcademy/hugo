@@ -1,0 +1,9 @@
+baseURL = "your-domain"
+relativeURLs = "True"
+languageCode = "en-us"
+title = "مدونتي"
+paginate = 9
+
+[permalinks]
+  posts = "/topics/:title/"
+ 

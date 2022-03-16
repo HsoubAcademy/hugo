@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head" . }}
+<body class="{{ .Params.flag }}">
+    {{ block "main" . }}
+        
+    {{end}}
+{{ partial "bottom" . }}
+</body>
+</html>
